@@ -1,0 +1,74 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : shannon_encoding
+Version: R-2020.09-SP4
+Date   : Mon Apr 29 17:45:10 2024
+****************************************
+
+
+Library(s) Used:
+
+    cb13fs120_tsmc_typ (File: /home/vlsilab/Downloads/Lib_Synopsys/sc_typ.db)
+
+
+Operating Conditions: cb13fs120_tsmc_typ   Library: cb13fs120_tsmc_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+shannon_encoding       8000              cb13fs120_tsmc_typ
+shannon_encoding_DW_div_uns_0
+                       ForQA             cb13fs120_tsmc_typ
+shannon_encoding_DW02_mult_1
+                       8000              cb13fs120_tsmc_typ
+shannon_encoding_DW_div_uns_1
+                       ForQA             cb13fs120_tsmc_typ
+shannon_encoding_DW01_add_6
+                       ForQA             cb13fs120_tsmc_typ
+shannon_encoding_DW_div_uns_2
+                       ForQA             cb13fs120_tsmc_typ
+shannon_encoding_DW02_mult_3
+                       8000              cb13fs120_tsmc_typ
+shannon_encoding_DW_div_uns_3
+                       ForQA             cb13fs120_tsmc_typ
+shannon_encoding_DW02_mult_4
+                       8000              cb13fs120_tsmc_typ
+shannon_encoding_DW_div_uns_4
+                       ForQA             cb13fs120_tsmc_typ
+shannon_encoding_DW02_mult_5
+                       ForQA             cb13fs120_tsmc_typ
+shannon_encoding_DW01_add_11
+                       ForQA             cb13fs120_tsmc_typ
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   4.0480 mW   (83%)
+  Net Switching Power  = 851.5387 uW   (17%)
+                         ---------
+Total Dynamic Power    =   4.8996 mW  (100%)
+
+Cell Leakage Power     =   3.9987 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      4.0480            0.8515        3.9987e+06            4.9036  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              4.0480 mW         0.8515 mW     3.9987e+06 pW         4.9036 mW

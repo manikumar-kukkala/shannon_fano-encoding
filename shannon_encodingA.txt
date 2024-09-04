@@ -1,0 +1,29 @@
+****************************************
+Report : area
+Design : shannon_encoding
+Version: R-2020.09-SP4
+Date   : Mon Apr 29 17:44:36 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    cb13fs120_tsmc_typ (File: /home/vlsilab/Downloads/Lib_Synopsys/sc_typ.db)
+
+Number of ports:                          537
+Number of nets:                           992
+Number of cells:                          729
+Number of combinational cells:            706
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         74
+Number of references:                      29
+
+Combinational area:               1370.500000
+Buf/Inv area:                       55.500000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             159.276319
+
+Total cell area:                  1370.500000
+Total area:                       1529.776319
